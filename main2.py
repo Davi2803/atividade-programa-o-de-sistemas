@@ -13,7 +13,7 @@ pygame.display.set_caption("Janela com Imagem")
 BG_COLOR = (30,30,40) #cor de fundo (preto)
 
 #Carregar a imagem
-image_file = ".png" #coloque o nome da foto aqui
+image_file = "burro-remove-preview.png" #coloque o nome da foto aqui
 if os.path.exists(image_file):
   img = pygame.image.load(image_file).convert_alpha() 
   img_rect = img.get_rect(center=(WIDTH // 2, HEIGHT // 2)) #Centraliza a imagem
