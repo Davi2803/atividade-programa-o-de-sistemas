@@ -33,8 +33,17 @@ while running:
 #pega as teclas pressionadas
 keys = pygame.key.get_pressed()
 
-#movimentação da imagem
- # tem que adicionar as keys aqui !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#Movimentação da imagem
+
+if keys[pygame.K_left]:
+  img_rect.x -= speed
+if keys[pygame.K_right]:
+  img_rect.x += speed
+if keys[pygame.K_up]:
+  img_rect.y -= speed
+if keys[pygame.K_down]:
+  img_rect.y += speed
+
 
 #Preencher o fundo
 screen.fill(BG_COLOR)
